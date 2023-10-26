@@ -14,10 +14,11 @@ import {
   DropdownMenuLabel, 
   DropdownMenuTrigger
 } from "@/components/ui/dropdown-menu";
-import { useCategoryModal } from "@/hooks/use-category-modal";
-import { AlertModal } from "@/components/modals/alert-modal";
+// import { useCategoryModal } from "@/hooks/use-category-modal";
+
 
 import { CategoryColumn } from "./columns";
+import { AlertModal } from "@/app/components/Modals/alert-modal";
 
 interface CellActionProps {
   data: CategoryColumn;
@@ -30,6 +31,7 @@ export const CellAction: React.FC<CellActionProps> = ({
   const params = useParams();
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(false);
+  
 
   const onConfirm = async () => {
     try {

@@ -1,4 +1,4 @@
-import prismadb from "@/lib/prismadb";
+import prismadb from "@/lib/db";
 
 import { SizeForm } from "./components/size-form";
 
