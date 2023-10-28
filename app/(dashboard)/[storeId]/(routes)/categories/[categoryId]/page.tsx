@@ -1,4 +1,4 @@
-import prismadb from "@/lib/prismadb";
+import prismadb from "@/lib/db";
 
 import { CategoryForm } from "./components/category-form";
 
